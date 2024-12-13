@@ -1,0 +1,47 @@
+/* default CSS styles for the GPSR manufacturer info on the product_info page*/
+#gpsrInfo{
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+}
+
+#gpsrInfoTitle {
+    font-size: 1.4em;
+}
+
+#gpsrInfo p {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+#gpsrInfo ul {
+    font-size: 1em;
+    padding-top: 0;
+    margin: 0;
+}
+.gpsrDetails {
+    margin-bottom: .6em;
+}
+
+.gpsrDetails ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gpsrInfoContact {
+    font-weight: bold;
+}
+
+
+
+#gpsrCompanies {
+    margin-top: 0.4em;
+}
+
+/* align company divs side by side */
+#gpsrEu, #gpsrNonEu {
+    margin: 0.2em;
+    display: inline-block;
+    vertical-align: middle;
+}
