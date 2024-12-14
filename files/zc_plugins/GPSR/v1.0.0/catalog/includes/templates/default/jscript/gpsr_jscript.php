@@ -7,7 +7,7 @@ declare(strict_types=1);
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * @author torvista
- * @updated 12/12/2024
+ * @updated 14/12/2024
  */
 /** IDE
  * @var bool $flag_show_gpsr
@@ -36,7 +36,7 @@ if ($flag_show_gpsr) {
                             <li><span class="gpsrInfoContact"><?= TEXT_MANUFACTURER_GPSR_ADDRESS ?></span><br><?= nl2br($gpsr_data['manufacturers_gpsr_contact']) ?></li>
                             <?php
                             if (!empty($gpsr_data['manufacturers_gpsr_tel'])) { ?>
-                                <li><span class="gpsrInfoContact"><?= TEXT_MANUFACTURER_GPSR_TELEPHONE ?></span><a href="tel:<?= $gpsr_data['manufacturers_gpsr_tel'] ?>" target="_blank"><?= $gpsr_data['manufacturers_gpsr_tel'] ?></a></li>
+                                <li><span class="gpsrInfoContact"><?= TEXT_MANUFACTURER_GPSR_TELEPHONE ?></span><a href="tel:<?= str_replace(' ', '', $gpsr_data['manufacturers_gpsr_tel']) ?>" target="_blank"><?= $gpsr_data['manufacturers_gpsr_tel'] ?></a></li>
                                 <?php
                             }
                             if (!empty($gpsr_data['manufacturers_gpsr_email'])) { ?>
@@ -59,7 +59,7 @@ if ($flag_show_gpsr) {
                                 <li><span class="gpsrInfoContact"><?= TEXT_MANUFACTURER_GPSR_ADDRESS ?></span><br><?= nl2br($gpsr_data['manufacturers_gpsr_contact_noneu']) ?></li>
                                 <?php
                                 if (!empty($gpsr_data['manufacturers_gpsr_tel_noneu'])) { ?>
-                                    <li><span class="gpsrInfoContact"><?= TEXT_MANUFACTURER_GPSR_TELEPHONE ?></span><a href="tel:<?= $gpsr_data['manufacturers_gpsr_tel_noneu'] ?>" target="_blank"><?= $gpsr_data['manufacturers_gpsr_tel_noneu'] ?></a></li>
+                                    <li><span class="gpsrInfoContact"><?= TEXT_MANUFACTURER_GPSR_TELEPHONE ?></span><a href="tel:<?= str_replace(' ', '', $gpsr_data['manufacturers_gpsr_tel_noneu']); ?>" target="_blank"><?= $gpsr_data['manufacturers_gpsr_tel_noneu'] ?></a></li>
                                     <?php
                                 }
                                 if (!empty($gpsr_data['manufacturers_gpsr_email_noneu'])) { ?>
