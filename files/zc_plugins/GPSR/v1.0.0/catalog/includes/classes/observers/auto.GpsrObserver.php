@@ -7,7 +7,7 @@ declare(strict_types=1);
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * @author torvista
- * @updated 12/12/2024
+ * @updated 14/12/2024
  */
 
 use App\Models\PluginControl;
@@ -75,9 +75,10 @@ class zcObserverGpsrObserver extends base
         $stylesheet = 'gpsr_styles.css';
         // load default css
         echo '<link rel="stylesheet" href="' . $this->getZcPluginDir() . DIR_WS_TEMPLATES . "default/css/$stylesheet" . '">' . "\n";
-        // check for template css
+        // get template directory
         $stylesheet_dir = $template->get_template_dir($stylesheet, DIR_WS_TEMPLATE, $current_page_base, 'css');
-        if (file_exists($stylesheet_dir . '/' . $stylesheet)) {
+        // prevent double loading of default and get template css
+        if (!str_contains($stylesheet_dir, $this->getZcPluginDir()) && file_exists($stylesheet_dir . '/' . $stylesheet)) {
             echo '<link rel="stylesheet" href="' . $stylesheet_dir . '/' . $stylesheet . '">' . "\n";
         }
     }
