@@ -64,7 +64,7 @@ The GPSR data is displayed as a link with the details hidden, that toggles show/
 
 The position of the link is set in gpsr_jscript.php, by default after the id "productDescription" but this is after "Ask a Question" so you may not like that!  
 You could use a specific id  
-e.g. ``<span id="gpsrInsert"></span>``   
+e.g. ``<div id="gpsrInsert"></div>``   
 in your template and it will insert there.
 
 See below for customisation of position, layout etc.
