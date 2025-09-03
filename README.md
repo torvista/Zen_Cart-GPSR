@@ -1,4 +1,4 @@
-# Zen Cart - GPSR
+# Zen Cart - GPSR (General Product Safety Regulation for the EU)
 
 Encapsulated plugin compatible with the Zen Cart Plugin Manager.  
 Tested with Zen Cart 2.1.0 and php 8.4.1.
