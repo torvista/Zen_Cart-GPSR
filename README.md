@@ -96,6 +96,7 @@ Via the GitHub Issues or in a parallel universe, PRs:
 https://github.com/torvista/Zen_Cart-GPSR/issues
 
 ## History
+03/09/2025: fix (copied) sloppy installer code
 13/12/2024: torvista - Completely reworked as an encapsulated plugin.
 
 Originally inspired by the great work done by webchills for the german Zen Cart:  
